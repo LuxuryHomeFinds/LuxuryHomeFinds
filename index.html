@@ -9,87 +9,59 @@
         body {
             font-family: 'Georgia', serif;
             margin: 0;
-            padding: 0;
+            padding: 40px 20px;
             background-color: #fcfbfa;
             color: #2c2c2c;
             text-align: center;
         }
-        header {
-            background-color: #ffffff;
-            padding: 60px 20px;
-            border-bottom: 1px solid #eae6e1;
+        .wrapper {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 50px 30px;
+            border: 1px solid #eae6e1;
         }
         h1 {
-            font-size: 3rem;
-            letter-spacing: 4px;
-            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+            letter-spacing: 3px;
             text-transform: uppercase;
             font-weight: 300;
+            margin-bottom: 5px;
         }
-        p.subtitle {
+        .tagline {
             font-style: italic;
             color: #75716b;
-            font-size: 1.2rem;
-            margin: 0;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-        .intro-box {
-            background: white;
-            padding: 40px;
-            border: 1px solid #eae6e1;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
             margin-bottom: 40px;
         }
-        /* Osigurano vidljivo i klikabilno dugme */
-        .cta-button {
-            display: inline-block !important;
-            visibility: visible !important;
-            background-color: #1c1c1c !important;
-            color: #ffffff !important;
-            padding: 15px 35px !important;
-            text-decoration: none !important;
+        .amazon-link {
+            display: block;
+            background-color: #1c1c1c;
+            color: #ffffff;
+            padding: 18px 20px;
+            text-decoration: none;
             letter-spacing: 2px;
             text-transform: uppercase;
             font-size: 0.9rem;
-            margin-top: 25px !important;
-            cursor: pointer !important;
-            transition: background 0.3s ease;
+            font-weight: bold;
+            margin-top: 30px;
+            border: 1px solid #1c1c1c;
         }
-        .cta-button:hover {
-            background-color: #c5a880 !important;
-        }
-        footer {
-            margin-top: 100px;
-            padding: 30px;
-            font-size: 0.9rem;
-            color: #9c9892;
-            border-top: 1px solid #eae6e1;
+        .amazon-link:hover {
+            background-color: #c5a880;
+            border-color: #c5a880;
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <div class="wrapper">
         <h1>Luxury Home Finds</h1>
-        <p class="subtitle">High-end aesthetics. Attainable budgets.</p>
-    </header>
-
-    <div class="container">
-        <div class="intro-box">
-            <h2>Welcome to Your Dream Space</h2>
-            <p>Creating a luxury home shouldn't break the bank. Here, I share handpicked, premium-looking Amazon finds that bring elegance, warmth, and sophistication to your living space without the designer price tag.</p>
-            
-            <a href="https://www.amazon.com/shop/marketingproj01d/curation/b8cb92c6-8d54-422a-8701-3217ef217400?ccs_id=3ab66915-c928-4255-8648-8b69ffb46255&ref_=aip_sf_cur_spv_ons_d&tag=onamzmarke04c-20" target="_blank" class="cta-button">Shop My Amazon Finds</a>
-        </div>
+        <div class="tagline">High-end aesthetics. Attainable budgets.</div>
+        
+        <p>Creating a luxury home shouldn't break the bank. Here, I share handpicked, premium-looking Amazon finds that bring elegance, warmth, and sophistication to your living space without the designer price tag.</p>
+        
+        <a href="https://www.amazon.com/shop/marketingproj01d/curation/b8cb92c6-8d54-422a-8701-3217ef217400" target="_blank" class="amazon-link">SHOP MY AMAZON FINDS</a>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Luxury Home Finds. All rights reserved.</p>
-    </footer>
 
 </body>
 </html>
