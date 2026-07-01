@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="pdomain_verify" content="789e472fb4834ff100bd0fac7cbf1063"/>
+    <meta name="pdomain_verify" content="789e472fb4834ff100bd0fac7cbf1063">
     <title>Luxury Home Finds</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* Luksuzni minimalistički stil */
         body {
@@ -17,55 +18,138 @@
         }
         header {
             background-color: #ffffff;
-            padding: 60px 20px;
+            padding: 40px 20px;
             border-bottom: 1px solid #eae6e1;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             letter-spacing: 4px;
             margin: 0 0 10px 0;
             text-transform: uppercase;
-            font-weight: 300;
+            font-weight: 400;
         }
-        p.subtitle {
+        .subtitle {
             font-style: italic;
             color: #75716b;
-            font-size: 1.2rem;
-            margin: 0;
+            font-size: 1.1rem;
+            margin: 0 0 20px 0;
         }
+        
+        /* Društvene mreže u zaglavlju */
+        .social-links {
+            margin-top: 15px;
+        }
+        .social-links a {
+            color: #2c2c2c;
+            font-size: 1.4rem;
+            margin: 0 12px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #c5a880; /* Zlatna nijansa */
+        }
+
         .container {
-            max-width: 1000px;
-            margin: 50px auto;
+            max-width: 1200px;
+            margin: 40px auto;
             padding: 0 20px;
         }
+        
         .intro-box {
             background: white;
-            padding: 40px;
+            padding: 30px;
             border: 1px solid #eae6e1;
             box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
+        .intro-box h2 {
+            font-weight: 400;
+            margin-top: 0;
+        }
+        .intro-box p {
+            color: #555;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto 25px auto;
+        }
+
         .cta-button {
             display: inline-block;
             background-color: #1c1c1c;
             color: white;
-            padding: 15px 35px;
+            padding: 12px 30px;
             text-decoration: none;
             letter-spacing: 2px;
             text-transform: uppercase;
-            font-size: 0.9rem;
-            margin-top: 20px;
+            font-size: 0.85rem;
             transition: background 0.3s ease;
         }
         .cta-button:hover {
-            background-color: #c5a880; /* Zlatna nijansa na hover */
+            background-color: #c5a880;
         }
+
+        /* Mreža klikabilnih slika (Ploče / Proizvodi) */
+        .grid-title {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .grid-item {
+            background: white;
+            border: 1px solid #eae6e1;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .grid-item a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .grid-item img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+        .item-info {
+            padding: 20px;
+            background: white;
+        }
+        .item-info h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .item-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #75716b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         footer {
             margin-top: 100px;
-            padding: 30px;
-            font-size: 0.9rem;
+            padding: 40px;
+            font-size: 0.85rem;
             color: #9c9892;
             border-top: 1px solid #eae6e1;
+            background: white;
         }
     </style>
 </head>
@@ -73,16 +157,59 @@
 
     <header>
         <h1>Luxury Home Finds</h1>
-        <p class="subtitle">High-end aesthetics. Attainable budgets.</p>
+        <div class="subtitle">High-end aesthetics. Attainable budgets.</div>
+        
+        <div class="social-links">
+            <a href="https://www.instagram.com/luxuryhomefinds1981" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/TVOJA_FACEBOOK_STRANICA" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://pinterest.com/luxuryhomefinds1981/_saved/" target="_blank" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+        </div>
     </header>
 
     <div class="container">
+        
         <div class="intro-box">
             <h2>Welcome to Your Dream Space</h2>
             <p>Creating a luxury home shouldn't break the bank. Here, I share handpicked, premium-looking Amazon finds that bring elegance, warmth, and sophistication to your living space without the designer price tag.</p>
-            
-            <a href="https://www.amazon.com/shop/marketingp01d/curation/b8cb92c6-8d54-422a-8701-3217ef217400?ref_=hype_hm_sf_e&ccs_id=5c1ea970-be49-45d0-877f-89bcfbd0fcb7&tag=onamzmarke04c-20">Shop My Amazon Finds</a>
+            <a class="cta-button" href="https://www.amazon.com/shop/marketingprodjone?ref_=cm_sw_r_cp_ud_aipsfshop_aipsfmarketingprodjone_M9X4HRBBD9FCB7&tag=onamzmerke04c-20" target="_blank">Shop My Amazon Finds</a>
         </div>
+
+        <h2 class="grid-title">Explore Our Curated Collections</h2>
+        
+        <div class="grid-container">
+            
+            <div class="grid-item">
+                <a href="https://www.pinterest.com/luxuryhomefinds1981/amazon-cozy-finds/" target="_blank">
+                    <img src="cozy.jpg" alt="Amazon Cozy Finds">
+                    <div class="item-info">
+                        <h3>Amazon Cozy Finds</h3>
+                        <p>Discover Warmth & Comfort</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="https://www.pinterest.com/luxuryhomefinds1981/modern-home-gadgets/" target="_blank">
+                    <img src="gadgets.jpg" alt="Modern Home Gadgets">
+                    <div class="item-info">
+                        <h3>Modern Home Gadgets</h3>
+                        <p>Smart & Sleek Technology</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="https://www.amazon.com/shop/marketingprodjone" target="_blank">
+                    <img src="decor.jpg" alt="Luxury Decor">
+                    <div class="item-info">
+                        <h3>Luxury Decor</h3>
+                        <p>Premium Living Aesthetics</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
     </div>
 
     <footer>
@@ -91,4 +218,3 @@
 
 </body>
 </html>
-
